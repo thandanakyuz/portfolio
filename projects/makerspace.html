@@ -24,7 +24,19 @@
         }
       })();
     </script>
-    <script src="utils\viewstl-master\build\stl_viewer.min.js"></script>
+    <script src="utils/viewstl-master/build/stl_viewer.min.js"></script>
+    <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont"),
+                {
+                    models:
+                    [
+                        {filename:"viewstl_plugin.stl"}
+                    ]
+                }
+            );
+        </script>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="project-page">
