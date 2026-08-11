@@ -24,19 +24,7 @@
         }
       })();
     </script>
-    <script src="utils/viewstl-master/build/stl_viewer.min.js"></script>
-    <script>
-            var stl_viewer=new StlViewer
-            (
-                document.getElementById("stl_cont"),
-                {
-                    models:
-                    [
-                        {filename:"viewstl_plugin.stl"}
-                    ]
-                }
-            );
-        </script>
+    <script src="../utils/viewstl-master/build/stl_viewer.min.js"></script>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body class="project-page">
@@ -130,7 +118,28 @@
             <li>ORCA Slicer</li>
           </ul>
         </section>
-        <div id="stl_cont"><a class="stl_cont" href="assets\stl-files\Shelves.stl">3D Model of Shelves Built Using Fence Posts</a></div>
+
+        <div id="stl_cont">
+          <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont"),
+                {
+                  load_three_files:"../utils/viewstl-master/build/three.min.js",
+                  auto_rotate:true, 
+                  mouse_zoom:true,
+                  controls:1,
+                  canvas_width:"40%",
+                  canvas_height:"40%", 
+                  models:
+                    [
+                        {filename:"../utils/viewstl-master/models/viewstl_plugin.stl"}
+                    ]
+                }
+            );
+        </script>
+        <a class="stl_cont" href="../assets/stl-files/Shelves.stl">3D Model of Shelves Built Using Fence Posts</a>
+        </div>
       </div>
     </main>
 
