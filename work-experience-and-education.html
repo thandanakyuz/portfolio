@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="T. Handan Akyuz — Learning Experience Designer & e-Learning Specialist based in Edmonton, AB. Curriculum design, online learning, adult education, and social justice pedagogy."
+    />
+    <meta name="author" content="T. Handan Akyuz" />
+    <link rel="icon" type="image/svg+xml" href="assets/headshot.jpg" />
+    <title>T. Handan Akyuz — Learning Experience Designer & e-Learning Specialist</title>
+
+    <meta property="og:title" content="T. Handan Akyuz — Learning Experience Designer & e-Learning Specialist" />
+    <meta
+      property="og:description"
+      content="Learning Experience Designer and e-Learning Specialist based in Edmonton, AB."
+    />
+    <meta property="og:image" content="assets/headshot.jpg" />
+
+    <script>
+      // Set theme attribute synchronously to prevent flash of unstyled content
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var prefersLight =
+            window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+          document.documentElement.setAttribute(
+            "data-theme",
+            saved || (prefersLight ? "light" : "dark"),
+          );
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================== HEADER ============================== -->
+    <header class="header">
+      <a href="/" class="header__logo" aria-label="Home link">
+        <img src="assets/headshot.jpg" width="45" height="45" alt="website logo" />
+      </a>
+
+      <div class="header__controls">
+        <nav class="nav" id="main-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="work-experience-and-education.html"> Work Experience & Education</a></li>
+            <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          id="menu-button"
+          class="header__menu-button"
+          aria-expanded="false"
+          aria-controls="main-menu"
+          aria-label="Toggle menu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" aria-hidden="true">
+            <path fill="currentColor" d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ============================== EDUCATION ============================== -->
+      <section class="page-section" id="education">
+        <h2 class="page-section__heading">Education</h2>
+
+        <div class="education">
+          <h3 class="education__school">University of Calgary</h3>
+          <p class="education__degree">MA in Educational Research — Curriculum &amp; Learning</p>
+          <p class="education__meta">Expected Graduation: August 2026  ·  CGPA 3.80</p>
+        </div>
+      </section>
+
+      <!-- ============================== EXPERIENCE ============================== -->
+      <section class="page-section" id="work-experience">
+        <h2 class="page-section__heading">Work Experience</h2>
+
+        <div class="experience">
+          <h3 class="experience__company">Centre for Newcomers</h3>
+          <div class="experience__role">
+            <h4 class="experience__position">Researcher <span class="experience__hours">· PT 20 hrs/wk</span></h4>
+            <span class="experience__dates">February 2026 — March 2026  ·  Calgary, AB (Remote)</span>
+          </div>
+          <ul class="experience__list">
+            <li class="experience__list-item">
+              Conducted a literature review and authored a 35-page evaluation of an immigration policy and IRCC's Case
+              Management Logic Model.
+            </li>
+            <li class="experience__list-item">
+              Designed a triage survey tool on MoodleCloud LMS for settlement workers to assess client eligibility for
+              case management services.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__company">Centre for Newcomers</h3>
+          <div class="experience__role">
+            <h4 class="experience__position">eLearning Designer, Researcher <span class="experience__hours">· PT 25 hrs/wk</span></h4>
+            <span class="experience__dates">April 2022 — March 2025  ·  Calgary, AB</span>
+          </div>
+          <ul class="experience__list">
+            <li class="experience__list-item">
+              Designed a 40-hour online course on MoodleCloud LMS and managed its setup, configuration, testing, and
+              maintenance from vision through launch.
+            </li>
+            <li class="experience__list-item">
+              Developed course materials, assessment tools, training guides, and digital learning resources to enhance
+              learning outcomes for settlement workers.
+            </li>
+            <li class="experience__list-item">
+              Collaborated with subject-matter experts and people with lived experiences to adapt technical content and
+              feedback into engaging, situated learning experiences.
+            </li>
+            <li class="experience__list-item">
+              Developed ~350 indicators of success and provided evaluation to better support SOGIESC newcomers.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__company">Anderson College of Health, Business &amp; Technology</h3>
+          <div class="experience__role">
+            <h4 class="experience__position">eLearning Designer, Curriculum Developer <span class="experience__hours">· PT 20 hrs/wk</span></h4>
+            <span class="experience__dates">April 2024 — October 2024  ·  Toronto, ON (Remote)</span>
+          </div>
+          <ul class="experience__list">
+            <li class="experience__list-item">
+              Created accessible learning materials, interactive activities, and multimedia content for a variety of
+              career-oriented programs in a polytechnic college.
+            </li>
+            <li class="experience__list-item">
+              Designed and maintained curriculum-aligned eLearning courses on D2L LMS using Vyond and Articulate Rise
+              360.
+            </li>
+            <li class="experience__list-item">
+              Collaborated with faculty and instructional designers to develop learning experiences aligned with adult
+              learning principles.
+            </li>
+            <li class="experience__list-item">
+              Built branded learning assets and production systems, including templates, graphics, and training
+              materials.
+            </li>
+            <li class="experience__list-item">
+              Conducted curriculum research on instructional best practices and implemented innovations in online
+              learning.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================== VOLUNTEER & COMMUNITY ============================== -->
+      <section class="page-section" id="volunteer-community">
+        <h2 class="page-section__heading">Volunteer &amp; Community</h2>
+
+        <div class="experience">
+          <h3 class="experience__company">Protospace — Makerspace, Hackerspace &amp; Fablab</h3>
+          <div class="experience__role">
+            <h4 class="experience__position">Member &amp; Volunteer <span class="experience__hours">· 30 hours of training</span></h4>
+            <span class="experience__dates">October 2023 — May 2025  ·  Calgary, AB</span>
+          </div>
+          <ul class="experience__list">
+            <li class="experience__list-item">
+              Trained in laser cutting &amp; engraving, 3D printing, CNC wood router, woodworking, power tools, sewing
+              &amp; embroidery, t-shirt vinyl printing, vinyl cutting, and glass beadmaking.
+            </li>
+            <li class="experience__list-item">
+              Provided tours and demonstrated tools to prospective members.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3 class="experience__company">Kids Coding Bootcamp — Sunalta Community Association</h3>
+          <div class="experience__role">
+            <h4 class="experience__position">Program Assistant</h4>
+            <span class="experience__dates">June 2023 &amp; July 2024  ·  Calgary, AB</span>
+          </div>
+          <ul class="experience__list">
+            <li class="experience__list-item">
+              Assisted facilitation of a coding bootcamp teaching youth ages 9–12 the Scratch programming language
+              across 4 day-long workshops.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================== CERTIFICATIONS ============================== -->
+      <section class="page-section" id="certifications">
+        <h3 class="page-section__heading">Professional Development &amp; Certifications</h3>
+        <div class="certifications">
+        <ul class="certifications__list">
+          <li class="certifications__list-item">Open Education Series Badge — Taylor Institute, University of Calgary (2025)</li>
+          <li class="certifications__list-item">Assessment in a Digital Age Badge — Taylor Institute (2024)</li>
+          <li class="certifications__list-item">Teaching Online Program — Taylor Institute (2024)</li>
+          <li class="certifications__list-item">Blended and Online Learning Pedagogy — Taylor Institute (2023)</li>
+          <li class="certifications__list-item">EDI Badge for Graduate Students — University of Calgary (2023)</li>
+          <li class="certifications__list-item">Advanced MS Office Certification (2017)</li>
+          <li class="certifications__list-item">HTML/CSS Fundamentals — Sololearn (2017)</li>
+        </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li>
+          <a class="footer__link" href="https://www.linkedin.com/in/handanakyuz" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="mailto:contact.thandan@gmail.com">Email</a>
+        </li>
+      </ul>
+      <p class="footer__credit">
+        T. Handan Akyuz © <span id="year"></span> <br />
+        Based in Treaty 6, Edmonton, AB.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

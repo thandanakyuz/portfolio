@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="T. Handan Akyuz — Learning Experience Designer & e-Learning Specialist based in Edmonton, AB. Curriculum design, online learning, adult education, and social justice pedagogy."
+    />
+    <meta name="author" content="T. Handan Akyuz" />
+    <link rel="icon" type="image/svg+xml" href="assets/headshot.jpg" />
+    <title>T. Handan Akyuz — Learning Experience Designer & e-Learning Specialist</title>
+
+    <meta property="og:title" content="T. Handan Akyuz — Learning Experience Designer & e-Learning Specialist" />
+    <meta
+      property="og:description"
+      content="Learning Experience Designer and e-Learning Specialist based in Edmonton, AB."
+    />
+    <meta property="og:image" content="assets/headshot.jpg" />
+
+    <script>
+      // Set theme attribute synchronously to prevent flash of unstyled content
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var prefersLight =
+            window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+          document.documentElement.setAttribute(
+            "data-theme",
+            saved || (prefersLight ? "light" : "dark"),
+          );
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============================== HEADER ============================== -->
+    <header class="header">
+      <a href="/" class="header__logo" aria-label="Home link">
+        <img src="assets/headshot.jpg" width="45" height="45" alt="website logo" />
+      </a>
+
+      <div class="header__controls">
+        <nav class="nav" id="main-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="work-experience-and-education.html"> Work Experience & Education</a></li>
+            <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          id="menu-button"
+          class="header__menu-button"
+          aria-expanded="false"
+          aria-controls="main-menu"
+          aria-label="Toggle menu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" aria-hidden="true">
+            <path fill="currentColor" d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================== HERO ============================== -->
+      <section class="hero" id="hero">
+        <h1 class="hero__name">T. Handan Akyuz</h1>
+        <p class="hero__title">Learning Experience Designer &amp; <br /> 
+          e-Learning Specialist</p>
+        <p class="hero__summary">
+          I design inclusive, accessible, and engaging online learning experiences for adult learners. 
+        </p>
+        <a class="button" href="mailto:contact.thandan@gmail.com">Get in Touch</a>
+      </section>
+
+      <!-- ============================== ABOUT ============================== -->
+      <section class="section" id="about">
+        <h2 class="section__heading">About Me</h2>
+        <div class="about">
+          <div class="about__text">
+            <p class="about__description">
+              Hi! I'm T. Handan Akyuz (they/them), an Learning Experience Designer and e-Learning Specialist based in Edmonton, AB. I'm passionate about creating inclusive, accessible learning experiences that promote
+              social justice and equity in education. With a Master's degree in Educational Research (Curriculum &amp; Learning) from the University of Calgary and experience designing online courses for non-profits and private colleges, I bring a learner-centered, anti-oppressive perspective to every project.
+            </p>
+            <p class="about__description">
+              My work spans curriculum design, course development on multiple LMS platforms (Moodle, D2L, Articulate Rise 360), multimedia content creation, and educational technology implementation. My research interests include intersectionality, anti-oppression education, critical social justice, gender &amp; sexuality studies, adult learning, learning experience design, and eLearning.
+            </p>
+          </div>
+          <div class="about__photo-frame">
+            <img src="assets/headshot.jpg" width="260" height="260" alt="T. Handan Akyuz" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== PROJECTS ============================== -->
+      <section class="section" id="projects">
+        <h2 class="section__heading">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <a class="project-card" href="projects/cfn-sogiesc.html">
+            <div class="project-card__media">
+              <div class="project__placeholder project__placeholder--blue" aria-hidden="true">
+                <span>SOGIESC</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project__tag">eLearning Course</span>
+              <h3 class="project-card__title">National SOGIESC Guideline Project</h3>
+              <p class="project-card__summary">
+                A 40-hour online training course for settlement service providers across Canada — designed end-to-end
+                on MoodleCloud with H5P interactivity and accessibility-first content.
+              </p>
+              <span class="project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/anderson-college.html">
+            <div class="project-card__media">
+              <div class="project__placeholder project__placeholder--teal" aria-hidden="true">
+                <span>Anderson</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project__tag">eLearning Course</span>
+              <h3 class="project-card__title">Anderson College — Curriculum-Aligned eLearning</h3>
+              <p class="project-card__summary">
+                Curriculum-aligned eLearning courses on D2L and Articulate Rise 360 for a polytechnic college, with
+                animated explainers, AI-narrated walkthroughs, and branded templates.
+              </p>
+              <span class="project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/makerspace.html">
+            <div class="project-card__media">
+              <div class="project__placeholder project__placeholder--purple" aria-hidden="true">
+                <span>Makerspace</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project__tag">Advocacy &amp; Curriculum</span>
+              <h3 class="project-card__title">Makerspace — Innovation & Creativity Hub</h3>
+              <p class="project-card__summary">
+                A community-driven innovation lab focused on creativity and entrepreneurship, where I participated in multiple workshops and events.
+              </p>
+              <span class="project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/web-design.html">
+            <div class="project-card__media">
+              <div class="project__placeholder project__placeholder--amber" aria-hidden="true">
+                <span>Web</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project__tag">Web Design</span>
+              <h3 class="project-card__title">School of Applied Languages — Bilkent University</h3>
+              <p class="project-card__summary">
+                Designed and built the official department website for Bilkent University's SAL using HTML &amp; CSS,
+                with a custom menu and image slider.
+              </p>
+              <span class="project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/video.html">
+            <div class="project-card__media">
+              <div class="project__placeholder project__placeholder--rose" aria-hidden="true">
+                <span>Video</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project__tag">Video Production</span>
+              <h3 class="project-card__title">Video Production &amp; Essays</h3>
+              <p class="project-card__summary">
+                Academic video essays and short productions exploring critical media theory and language education,
+                edited with HitFilm Express and produced with Powtoon.
+              </p>
+              <span class="project-card__cta">View Project →</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projects/graphic-design.html">
+            <div class="project-card__media">
+              <div class="project__placeholder project__placeholder--green" aria-hidden="true">
+                <span>Design</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <span class="project__tag">Graphic Design</span>
+              <h3 class="project-card__title">Graphic Design &amp; Image Editing</h3>
+              <p class="project-card__summary">
+                Vector-based presentation covers, image editing in GIMP, and visual assets for academic and advocacy
+                projects.
+              </p>
+              <span class="project-card__cta">View Project →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============================== SKILLS & TOOLS ============================== -->
+      <section class="section" id="skills">
+        <h2 class="section__heading">Skills &amp; Tools</h2>
+
+        <div class="skills">
+          <div class="skills__group">
+            <h3 class="skills__heading">Learning Management Systems</h3>
+            <ul class="skills__list">
+              <li><span class="skill-logo skill-logo--moodle" aria-hidden="true">M</span>MoodleCloud</li>
+              <li><span class="skill-logo skill-logo--d2l" aria-hidden="true">D2</span>D2L Brightspace</li>
+              <li><span class="skill-logo skill-logo--articulate" aria-hidden="true">A</span>Articulate Rise 360</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Authoring &amp; Interactivity</h3>
+            <ul class="skills__list">
+              <li><span class="skill-logo skill-logo--h5p" aria-hidden="true">H5</span>H5P</li>
+              <li><span class="skill-logo skill-logo--vyond" aria-hidden="true">V</span>Vyond</li>
+              <li><span class="skill-logo skill-logo--powtoon" aria-hidden="true">P</span>Powtoon</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Media Production</h3>
+            <ul class="skills__list">
+              <li><span class="skill-logo skill-logo--photoshop" aria-hidden="true">Ps</span>Adobe Photoshop</li>
+              <li><span class="skill-logo skill-logo--acrobat" aria-hidden="true">A</span>Adobe Acrobat Pro</li>
+              <li><span class="skill-logo skill-logo--canva" aria-hidden="true">C</span>Canva Pro</li>
+              <li><span class="skill-logo skill-logo--descript" aria-hidden="true">D</span>Descript</li>
+              <li><span class="skill-logo skill-logo--wellsaid" aria-hidden="true">W</span>WellSaid Labs</li>
+              <li><span class="skill-logo skill-logo--clipchamp" aria-hidden="true">Cc</span>Clipchamp</li>
+              <li><span class="skill-logo skill-logo--hitfilm" aria-hidden="true">HF</span>HitFilm Express</li>
+              <li><span class="skill-logo skill-logo--gimp" aria-hidden="true">G</span>GIMP</li>
+              <li><span class="skill-logo skill-logo--envato" aria-hidden="true">E</span>Envato Elements</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Productivity &amp; Web</h3>
+            <ul class="skills__list">
+              <li><span class="skill-logo skill-logo--ms365" aria-hidden="true">M</span>Microsoft 365</li>
+              <li><span class="skill-logo skill-logo--google" aria-hidden="true">G</span>Google Workspace</li>
+              <li><span class="skill-logo skill-logo--html" aria-hidden="true">&lt;/&gt;</span>HTML &amp; CSS</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Maker &amp; Fabrication</h3>
+            <ul class="skills__list">
+              <li><span class="skill-logo skill-logo--inkscape" aria-hidden="true">I</span>Inkscape</li>
+              <li><span class="skill-logo skill-logo--lightburn" aria-hidden="true">L</span>LightBurn</li>
+              <li><span class="skill-logo skill-logo--graphtec" aria-hidden="true">Gr</span>Graphtec Studio</li>
+              <li><span class="skill-logo skill-logo--tinkercad" aria-hidden="true">T</span>TinkerCAD</li>
+              <li><span class="skill-logo skill-logo--bambulab" aria-hidden="true">B</span>Bambu Lab</li>
+              <li><span class="skill-logo skill-logo--orca" aria-hidden="true">O</span>ORCA Slicer</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Pedagogy &amp; Design</h3>
+            <ul class="skills__list">
+              <li>Curriculum design</li>
+              <li>Adult learning principles</li>
+              <li>Accessibility-first design</li>
+              <li>Anti-oppressive pedagogy</li>
+              <li>Culturally responsive teaching</li>
+              <li>Assessment design</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__heading">Languages</h3>
+            <ul class="skills__list">
+              <li>English — Professional</li>
+              <li>Turkish — Native</li>
+              <li>French — Conversational</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li>
+          <a class="footer__link" href="https://www.linkedin.com/in/handanakyuz" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="mailto:contact.thandan@gmail.com">Email</a>
+        </li>
+      </ul>
+      <p class="footer__credit">
+        T. Handan Akyuz © <span id="year"></span> <br />
+        Based in Treaty 6, Edmonton, AB.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

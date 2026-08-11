@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Makerspace — Innovation & Creativity Hub"
+    />
+    <link rel="icon" type="image/svg+xml" href="../assets/headshot.jpg" />
+    <title>Makerspace — T. Handan Akyuz</title>
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var prefersLight =
+            window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+          document.documentElement.setAttribute(
+            "data-theme",
+            saved || (prefersLight ? "light" : "dark"),
+          );
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="project-page">
+    <header class="header">
+      <a href="../index.html" class="header__logo" aria-label="Home link">
+        <img src="../assets/headshot.jpg" width="45" height="45" alt="website logo" />
+      </a>
+      <div class="header__controls">
+        <nav class="nav" id="main-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="../index.html#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="../work-experience-and-education.html"> Work Experience & Education</a></li>
+            <li class="nav__item"><a class="nav__link" href="../index.html#projects">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="../index.html#skills">Skills</a></li>
+          </ul>
+        </nav>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button type="button" id="menu-button" class="header__menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" aria-hidden="true">
+            <path fill="currentColor" d="M128 102.4c0-14.138 11.462-25.6 25.6-25.6h332.8c14.138 0 25.6 11.462 25.6 25.6S500.538 128 486.4 128H153.6c-14.138 0-25.6-11.463-25.6-25.6zm358.4 128H25.6C11.462 230.4 0 241.863 0 256c0 14.138 11.462 25.6 25.6 25.6h460.8c14.138 0 25.6-11.462 25.6-25.6 0-14.137-11.462-25.6-25.6-25.6zm0 153.6H256c-14.137 0-25.6 11.462-25.6 25.6 0 14.137 11.463 25.6 25.6 25.6h230.4c14.138 0 25.6-11.463 25.6-25.6 0-14.138-11.462-25.6-25.6-25.6z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="project-page">
+        <a class="project-page__back" href="../index.html#projects">Back to portfolio</a>
+
+        <span class="project-page__tag">Makerspace</span>
+        <h1 class="project-page__title">Makerspace — Innovation & Creativity Hub</h1>
+        <p class="project-page__lede">
+          Participated in multiple workshops and events at the Makerspace, a community-driven innovation lab focused on creativity and entrepreneurship.
+        </p>
+
+        <dl class="project-page__meta">
+          <div class="project-page__meta-item">
+            <dt>Organization</dt>
+            <dd>Protospace, Calgary, AB</dd>
+          </div>
+          <div class="project-page__meta-item">
+            <dt>Role</dt>
+            <dd>Volunteer &amp; Member</dd>
+          </div>
+          <div class="project-page__meta-item">
+            <dt>Timeline</dt>
+            <dd>Oct 2023 — May 2025</dd>
+          </div>
+          <div class="project-page__meta-item">
+            <dt>Location</dt>
+            <dd>Calgary, AB</dd>
+          </div>
+        </dl>
+
+        <section class="project-page__block">
+          <h2 class="project-page__block-heading">Overview</h2>
+          <div class="project-page__body">
+            <p>
+              The Protospace is a community-driven innovation lab focused on creativity and entrepreneurship. As a volunteer and member, I participated in multiple workshops and events, contributing to the vibrant ecosystem of learning and collaboration.
+            </p>
+          </div>
+        </section>
+
+        <section class="project-page__block">
+          <h2 class="project-page__block-heading">Responsibilities</h2>
+          <ul class="project-page__list">
+            <li>
+              Trained in laser cutting & engraving, 3D printing, CNC wood router, woodworking, power tools, sewing & embroidery, t-shirt vinyl printing, vinyl cutting, and glass beadmaking.
+            </li>
+            <li>
+              Provided tours and demonstrated tools to prospective members.
+            </li>
+          </ul>
+        </section>
+
+        <section class="project-page__block">
+          <h2 class="project-page__block-heading">Tools &amp; Software</h2>
+          <ul class="project-page__pill-list">
+            <li>Inkscape</li>
+            <li>LightBurn</li>
+            <li>Graphtec Studio</li>
+            <li>TinkerCAD</li>
+            <li>Bambu Lab</li>
+            <li>ORCA Slicer</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li>
+          <a class="footer__link" href="https://www.linkedin.com/in/handanakyuz" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="mailto:contact.thandan@gmail.com">Email</a>
+        </li>
+      </ul>
+      <p class="footer__credit">
+        T. Handan Akyuz © <span id="year"></span> <br />
+        Based in Treaty 6, Edmonton, AB.
+      </p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

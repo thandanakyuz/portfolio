@@ -1,35 +1,40 @@
-# AstroZen - Personal Portfolio Website
+# T. Handan Akyuz — Learning Experience Designer Portfolio
 
-AstroZen is a minimalist, accessible and responsive portfolio template for your personal portfolio website. It is built with Astro and TailwindCSS.
+A minimalist, accessible, and responsive portfolio site, built with plain HTML, CSS, and JavaScript — no build step, no framework, no dependencies.
 
-![zen-og](https://github.com/user-attachments/assets/7a72aaae-6652-4cd0-becc-8e6a3c224993)
+## Files
 
-> [!NOTE]
-> The information contained in this template, including names, images, and content, is entirely fictitious and is intended solely to give the design a realistic appearance. Any coincidence with real-life people, events, or situations is purely coincidental. It is recommended that you replace this information with your own information.
-
-## 🔥 Features
-
-- [x] Minimalist design. clean and simple
-- [x] Mobile-first responsive layout
-- [x] SEO-friendly and accessible
-- [x] Easy to customize with a single configuration file
-
-## ✅ Lighthouse Score
-
-![performance](https://github.com/user-attachments/assets/4f95e2ca-03f9-4996-9e34-dcd179194c58)
-
-## 🚀 Getting Started
-
-Clone this repository to your local machine using Git.
-
-```scheme
-git clone https://github.com/immois/astro-zen.git
-cd astro-zen
+```
+.
+├── index.html      # All page markup
+├── styles.css      # All styling
+├── script.js       # Mobile menu toggle + scroll-spy navigation
+├── assets/         # Images, icons, favicon
+├── projects/       # HTML links for individual projects' webpages
+├── LICENSE
+└── README.md
 ```
 
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `pnpm install` | Installs dependencies                        |
-| `pnpm dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm build`   | Build your production site to `./dist/`      |
-| `pnpm preview` | Preview your build locally, before deploying |
+## Running locally
+
+Open `index.html` in any modern browser. That's it.
+
+If you'd prefer a local server (recommended, since some browsers restrict relative paths when opening via `file://`):
+
+```bash
+# Python
+python -m http.server 8000
+
+# Node (if you have it)
+npx serve .
+```
+
+Then visit `http://localhost:8000`.
+
+## Editing content
+
+All copy lives directly inside `index.html`. Update the hero, experience, projects, and about sections there. Fonts are loaded from Google Fonts via `@import` in `styles.css`.
+
+## Licence
+
+Inspired by [Moisés Machuca (astro-zen)](https://github.com/immois/astro-zen), converted to vanilla HTML/CSS/JS.
