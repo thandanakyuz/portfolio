@@ -415,7 +415,7 @@ main {
 }
 
 .experience__list-item::before {
-  content: url("assets/check.svg");
+  content: url("assets/icons/check.svg");
   position: absolute;
   top: 0.25rem;
   left: 0;
@@ -601,7 +601,7 @@ main {
 }
 
 .footer__link[target="_blank"]::after {
-  content: url("assets/external.svg");
+  content: url("assets/icons/external.svg");
   position: relative;
   bottom: -4px;
   margin-left: 4px;
@@ -862,7 +862,7 @@ main {
 }
 
 .certifications__list-item::before {
-  content: url("assets/check.svg");
+  content: url("assets/icons/check.svg");
   position: absolute;
   top: 0.25rem;
   left: 0;
@@ -987,7 +987,7 @@ main > .project-page {
 }
 
 .project-page__list li::before {
-  content: url("assets/check.svg");
+  content: url("assets/icons/check.svg");
   position: absolute;
   top: 0.25rem;
   left: 0;
@@ -1109,6 +1109,6 @@ main > .back-link {
   background: rgba(var(--surface-channels), 0.6);
   border: 1px solid rgba(var(--muted-channels), 0.2);
   border-radius: 0.75rem;
-  overflow: hidden;
+  overflow: auto;
   margin-bottom: 1rem;
 }

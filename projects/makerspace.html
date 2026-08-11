@@ -14,7 +14,6 @@
     <script src="../utils/viewstl-v1.13/build/Projector.js"></script>
     <script src="../utils/viewstl-v1.13/build/CanvasRenderer.js"></script>
     <script src="../utils/viewstl-v1.13/build/OrbitControls.js"></script>
-    <script src="../utils/viewstl-v1.13/build/stl_viewer.min.js"></script>
     <script>
       (function () {
         try {
@@ -124,21 +123,22 @@
           </ul>
         </section>
 
-        <div id="stl_cont">
-          <script>
-            var stl_viewer=new StlViewer
-            (
-                document.getElementById("stl_cont"),
-                {
-                  models:
-                    [
-                        {filename:"../assets/stl-files/Shelves.stl"}
-                    ]
-                }
-            );
-        </script>
-        <a class="stl_cont" href="../assets/stl-files/Shelves.stl">3D Model of Shelves Built Using Fence Posts</a>
+        <div id="stl_cont" style="width:500px;height:500px;margin:0 auto;">
+          <canvas width="500" height="500" style="width: 500px; height: 500px;"></canvas>
         </div>
+        <script src="../utils/viewstl-v1.13/build/stl_viewer.min.js"></script>
+        <script>
+          var stl_viewer=new StlViewer
+          (
+              document.getElementById("stl_cont"),
+              {
+                models:
+                  [
+                      {filename:"../../../assets/stl-files/Arrangement_of_wood.stl"}
+                  ]
+              }
+          );
+        </script>
       </div>
     </main>
 
