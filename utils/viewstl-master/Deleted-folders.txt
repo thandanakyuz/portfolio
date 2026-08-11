@@ -1,3 +1,0 @@
-Due to repetition, dependencies and src folders were deleted.
-
-Link for the original repo: https://github.com/omrips/viewstl/tree/master
