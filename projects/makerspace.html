@@ -9,7 +9,12 @@
     />
     <link rel="icon" type="image/svg+xml" href="../assets/headshot.jpg" />
     <title>Makerspace — T. Handan Akyuz</title>
-    <script src="../utils/viewstl-master/build/stl_viewer.min.js"></script>
+    <script src="../utils/viewstl-v1.13/build/three.min.js"></script>
+    <script src="../utils/viewstl-v1.13/build/webgl_detector.js"></script>
+    <script src="../utils/viewstl-v1.13/build/Projector.js"></script>
+    <script src="../utils/viewstl-v1.13/build/CanvasRenderer.js"></script>
+    <script src="../utils/viewstl-v1.13/build/OrbitControls.js"></script>
+    <script src="../utils/viewstl-v1.13/build/stl_viewer.min.js"></script>
     <script>
       (function () {
         try {
@@ -125,15 +130,9 @@
             (
                 document.getElementById("stl_cont"),
                 {
-                  load_three_files:"../utils/viewstl-master/build/three.min.js",
-                  auto_rotate:true, 
-                  mouse_zoom:true,
-                  controls:1,
-                  canvas_width:"40%",
-                  canvas_height:"40%", 
                   models:
                     [
-                        {filename:"../utils/viewstl-master/models/viewstl_plugin.stl"}
+                        {filename:"../assets/stl-files/Shelves.stl"}
                     ]
                 }
             );
