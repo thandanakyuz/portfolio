@@ -14,8 +14,6 @@
     <script src="../utils/viewstl-v1.13/build/Projector.js"></script>
     <script src="../utils/viewstl-v1.13/build/CanvasRenderer.js"></script>
     <script src="../utils/viewstl-v1.13/build/OrbitControls.js"></script>
-    <script src="../utils/viewstl-v1.13/build/load_stl.min.js"></script>
-    <script src="../utils/viewstl-v1.13/build/TrackballControls.js"></script>
     <script src="../utils/viewstl-v1.13/build/parser.min.js"></script>
     <script src="../utils/viewstl-v1.13/build/ie_polyfills.js"></script>
     <script src="../utils/viewstl-v1.13/build/stl_viewer.min.js"></script>
@@ -128,18 +126,16 @@
           </ul>
         </section>
 
-        <div id="stl_cont" style="width:500px;height:500px;margin:0 auto;">
-          <canvas width="500" height="500" style="width: 500px; height: 500px;"></canvas>
-        </div>
+        <div id="stl-cont"></div>
         
         <script>
           var stl_viewer=new StlViewer
           (
-              document.getElementById("stl_cont"),
+              document.getElementById("stl-cont"),
               {
                 models:
                   [
-                      {filename:"../../../assets/stl-files/Arrangement_of_wood.stl"}
+                      {id:1, filename:"../../../assets/stl-files/Arrangement_of_wood.stl", y:45, z:20}
                   ]
               }
           );
