@@ -6,11 +6,27 @@ A minimalist, accessible, and responsive portfolio site, built with plain HTML, 
 
 ```
 .
-├── index.html      # All page markup
-├── styles.css      # All styling
-├── script.js       # Mobile menu toggle + scroll-spy navigation
-├── assets/         # Images, icons, favicon
-├── projects/       # HTML links for individual projects' webpages
+├── index.html              # All page markup
+├── resume.html             # Professional Resume
+├── styles.css              # All styling
+├── script.js               # Mobile menu toggle + scroll-spy navigation
+├── projects/               # HTML links for individual projects' webpages 
+│   ├── cfn-sogiesc.html
+│   ├── anderson-college.html
+│   ├── graphic-design.html
+│   ├── makerspace.html
+│   ├── video.html
+│   └── web-design.html
+├── assets/                 # Images, icons, favicon, STL files
+│   ├── icons/
+│   └── stl-files/
+├── utils/
+│   └── viewstl-v1.13/      # Viewstl - STL/OBJ 3D files Viewer by viewstl.com
+│       ├── build/
+│       ├── dependencies/
+│       ├── src/
+│       ├── LICENSE
+│       └── README.md
 ├── LICENSE
 └── README.md
 ```
