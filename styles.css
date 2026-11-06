@@ -854,6 +854,12 @@ main {
   left: 0;
 }
 
+.education__list-item img { 
+  display: inline-block; 
+  vertical-align: top; 
+  margin-inline-start: -2rem;
+}
+
 .certs__subheading {
   margin-top: 2rem;
   margin-bottom: 1rem;
